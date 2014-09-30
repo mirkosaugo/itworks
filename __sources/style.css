@@ -1,0 +1,17 @@
+@font-face {font-family: 'source_sans_proregular'; src: url('sourcesanspro-regular-webfont.eot');src: url('sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),url('sourcesanspro-regular-webfont.woff2') format('woff2'),url('sourcesanspro-regular-webfont.woff') format('woff'),url('sourcesanspro-regular-webfont.ttf') format('truetype'),url('sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');font-weight: normal;font-style: normal;}
+body{-webkit-font-smoothing: antialiased;font-family: 'source_sans_proregular';color: #4E4E4E;}
+.logo {margin: 0 auto;display: block;}
+h1 {text-align: center;font-size: 35px;margin-bottom:0;}
+p.intro {text-align: center;font-size: 15px;margin-top:0;}
+.list {width: 940px; display: block; margin: 0 auto;}
+a.list-group-item {color: #555;text-decoration: none;}
+a.list-group-item:hover {background: #EDEDED;}
+.list-group-item p {margin: 12px 0;}
+.list-group-item {padding: 12px 15px 0;display: block;position: relative;display: block;background-color: #FFF;border-bottom: 1px solid #EDEDED;}
+.module-icon {float: left;width: 56px;margin-right: 25px;}
+.icon {border-radius: 20%;display: block;width: 100% \9;max-width: 100%;height: auto;}
+h4{margin: 0;}
+.btn {width: 154px;color: #FFF;background-color: #5CB85C;border-color: #4CAE4C;display: inline-block;margin-bottom: 0;font-weight: bold;text-align: center;vertical-align: middle;cursor: pointer;background-image: none;border: 1px solid rgba(0, 0, 0, 0);white-space: nowrap;padding: 6px 12px;font-size: 15px;line-height: 1.6;border-radius: 3px;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;position: absolute;right: 0;top: 26px;right: 15px;}
+.btn:hover{background-color: #449D44;border-color: #398439;}
+.credits{text-align: center;display: block;margin: 16px 0;text-decoration: none;color:#4E4E4E;}
+.credits:hover{text-decoration: underline;};
