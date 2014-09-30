@@ -17,7 +17,7 @@
         <![endif]-->
      <!-- <img src="__sources/logo.png" alt="" class="logo"> -->
      <h1>it works!</h1>
-     <p class="intro">an easy localhost luncher :)</p>
+     <p class="intro">an easy localhost launcher :)</p>
       <?php
       $path  = $_SERVER["SERVER_NAME"]. dirname($_SERVER["PHP_SELF"]);        
       $exclude = array('__sources');
@@ -36,7 +36,7 @@
                   </div>
                   <h4>'.$temp_explode[0].'</h4>
                   <p>'.$temp_explode[1].'</p>
-                  <span class="btn">lunch!</span>
+                  <span class="btn">launch!</span>
             </a>';
         }
       }

@@ -1,6 +1,6 @@
 itworks
 =======
-an easy localhost luncher :)
+an easy localhost launcher :)
 
 ![](http://wearezaion.com/img/screen1.png)
 
