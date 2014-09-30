@@ -22,18 +22,17 @@ Rename the folders in your localhost in this format:
 
   `[project name] | [description] | [thumbnail color]`
 
-[project name] = Your project name;
-[description] = Your project description;
-null = localhost project;
-[thumbnail color] = the color od thumbnail:
+- [project name] = Your project name;
+- [description] = Your project description;
 
-          null = default grey thumb;
-          1 = yellow thumb;
-          2 = green thumb;
-          3 = orange thumb;
-          4 = blue thumb;
+          `null = localhost project;`
 
+- [thumbnail color] = the color od thumbnail:
 
+          `null = default grey thumb;`
+          `1 = yellow thumb;`
+          `2 = green thumb;`
+          `3 = orange thumb;`
+          `4 = blue thumb;`
 
-
-An easy project made by Mirko Saugo @wearezaion
+An easy project made by Mirko Saugo [@wearezaion](http://wearezaion.com)
