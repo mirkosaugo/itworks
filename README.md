@@ -16,7 +16,7 @@ Copy the source ('index.php' and the folder '__sources') in your localhost root 
 
 ### How it works:
 
-![](http://wearezaion.com/img/screen2.png)
+![](http://wearezaion.com/img/screen4.png)
 
 Inside your project folder create a .json file called 'itworks.json' (view the default file in repo):
 
@@ -30,7 +30,7 @@ Inside your project folder create a .json file called 'itworks.json' (view the d
 
           `null = localhost project;`
 
-- [thumb] = the color od thumbnail:
+- [thumb] = the thumbnail color:
 
           `null = default grey thumb;`
           `1 = yellow thumb;`
