@@ -19,7 +19,7 @@
      <h1>it works!</h1>
      <p class="intro">an easy localhost launcher :)</p>
       <?php
-      $path  = $_SERVER["SERVER_NAME"]. dirname($_SERVER["PHP_SELF"]);        
+      $path  = $_SERVER["SERVER_NAME"] . ':' . $_SERVER["SERVER_PORT"] . dirname($_SERVER["PHP_SELF"]);        
       $exclude = array('__sources');
       $desc_null = 'localhost project'; 
       $content = '<div class="list">';
