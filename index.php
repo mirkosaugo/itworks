@@ -24,18 +24,22 @@
       $desc_null = 'localhost project'; 
       $content = '<div class="list">';
       foreach( glob($_SERVER['DOCUMENT_ROOT'] .'/*', GLOB_ONLYDIR) as $fn) {
-      $temp_name = basename($fn);
-      $temp_explode = explode('| ', $temp_name);
+        
+      $name = basename($fn);
+      if(!in_array($name, $exclude)){
 
-      if(!in_array($temp_name, $exclude)){
-        if($temp_explode[1]=='') $temp_explode[1] = $desc_null;
+        $contj = file_get_contents($fn.'/itworks.json');
+        if(!empty($contj)) $json = json_decode($contj, true); else $json = array("desc"=>"localhost project", "thumb"=>"");
+       
+        if($json['desc']=='') $json['desc'] = $desc_null;
+        if($json['url']=='') $json['url'] = $path.$name;
         $content .= '
-            <a class="list-group-item" href="http://'.$path.$temp_explode[0].'">
+            <a class="list-group-item" href="http://'.$json['url'].'">
                   <div class="module-icon">
-                      <img class="icon" src="__sources/timthumb.php?src=__sources/thumb'.$temp_explode[2].'.png&w=56&h=56" alt="">
+                      <img class="icon" src="__sources/timthumb.php?src=__sources/thumb'.$json['thumb'].'.png&w=56&h=56" alt="">
                   </div>
-                  <h4>'.$temp_explode[0].'</h4>
-                  <p>'.$temp_explode[1].'</p>
+                  <h4>'.$name.'</h4>
+                  <p>'.$json['desc'].'</p>
                   <span class="btn">launch!</span>
             </a>';
         }

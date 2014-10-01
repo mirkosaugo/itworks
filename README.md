@@ -10,7 +10,7 @@ It works! is a simple php file (with his small folder dependency) for a cool Dir
 
 ### Installation:
 
-Copy the source ('index.php' and the folfer '__sources') in your localhost root directory.
+Copy the source ('index.php' and the folder '__sources') in your localhost root directory.
 
 ***
 
@@ -18,16 +18,19 @@ Copy the source ('index.php' and the folfer '__sources') in your localhost root 
 
 ![](http://wearezaion.com/img/screen2.png)
 
-Rename the folders in your localhost in this format:
+Inside your project folder create a .json file called 'itworks.json' (view the default file in repo):
 
-  `[project name] | [description] | [thumbnail color]`
+  `{
+ 	"desc": "project description",
+ 	"thumb": 1,
+ 	"url": "customurl.dev"
+   }`
 
-- [project name] = Your project name;
-- [description] = Your project description;
+- [desc] = Your project description;
 
           `null = localhost project;`
 
-- [thumbnail color] = the color od thumbnail:
+- [thumb] = the color od thumbnail:
 
           `null = default grey thumb;`
           `1 = yellow thumb;`
@@ -35,4 +38,8 @@ Rename the folders in your localhost in this format:
           `3 = orange thumb;`
           `4 = blue thumb;`
 
+- [url] = if project have a custom url set in virtualhost (example.dev):
+
+          `null = folder name;`
+          
 An easy project made by Mirko Saugo [@wearezaion](http://wearezaion.com)
