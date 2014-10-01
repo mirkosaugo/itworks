@@ -2,7 +2,7 @@ itworks
 =======
 an easy localhost launcher :)
 
-![](http://wearezaion.com/img/screen1.png)
+![](http://wearezaion.com/img/screen3.png)
 
 It works! is a simple php file (with his small folder dependency) for a cool Directory Listings in your localhost url.
 
