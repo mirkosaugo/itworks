@@ -27,21 +27,25 @@
         
       $name = basename($fn);
       if(!in_array($name, $exclude)){
-
-        $contj = file_get_contents($fn.'/itworks.json');
+        $filename = $fn.'/itworks.json';
+        if (file_exists($filename)) $contj = file_get_contents($filename); else $contj = null;
         if(!empty($contj)) $json = json_decode($contj, true); else $json = array("desc"=>"localhost project", "thumb"=>"");
        
         if($json['desc']=='') $json['desc'] = $desc_null;
         if($json['url']=='') $json['url'] = $path.$name;
-        $content .= '
-            <a class="list-group-item" href="http://'.$json['url'].'">
-                  <div class="module-icon">
-                      <img class="icon" src="__sources/timthumb.php?src=__sources/thumb'.$json['thumb'].'.png&w=56&h=56" alt="">
-                  </div>
-                  <h4>'.$name.'</h4>
-                  <p>'.$json['desc'].'</p>
-                  <span class="btn">launch!</span>
-            </a>';
+        if($json['hide']=='') $json['hide'] = false;
+        
+        if(!$json['hide']):
+          $content .= '
+              <a class="list-group-item" href="http://'.$json['url'].'">
+                    <div class="module-icon">
+                        <img class="icon" src="__sources/timthumb.php?src=__sources/thumb'.$json['thumb'].'.png&w=56&h=56" alt="">
+                    </div>
+                    <h4>'.$name.'</h4>
+                    <p>'.$json['desc'].'</p>
+                    <span class="btn">launch!</span>
+              </a>';
+        endif;
         }
       }
       $content .= ' <a class="credits" target="_blank" href="https://twitter.com/wearezaion">@wearezaion</a></div>';

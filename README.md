@@ -10,7 +10,7 @@ It works! is a simple php file (with his small folder dependency) for a cool Dir
 
 ### Installation:
 
-Copy the source ('index.php' and the folder '__sources') in your localhost root directory.
+Copy the source ('index.php' and the folder '__sources') in your localhost root directory [set to 777].
 
 ***
 
@@ -23,14 +23,15 @@ Inside your project folder create a .json file called 'itworks.json' (view the d
   `{
  	"desc": "project description",
  	"thumb": 1,
- 	"url": "customurl.dev"
+ 	"url": "customurl.dev",
+ 	"hide": false
    }`
 
-- [desc] = Your project description;
+- [desc] = Your project description (string);
 
           `null = localhost project;`
 
-- [thumb] = the thumbnail color:
+- [thumb] = the thumbnail color (number):
 
           `null = default grey thumb;`
           `1 = yellow thumb;`
@@ -38,8 +39,12 @@ Inside your project folder create a .json file called 'itworks.json' (view the d
           `3 = orange thumb;`
           `4 = blue thumb;`
 
-- [url] = if project have a custom url set in virtualhost (example.dev):
+- [url] = if project have a custom url set in virtualhost (string):
 
           `null = folder name;`
+
+- [hide] = if set on true the project folder not showing in list (true | false):
+
+          `null = false;`
           
 An easy project made by Mirko Saugo [@wearezaion](http://wearezaion.com)
