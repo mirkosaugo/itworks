@@ -48,7 +48,7 @@
         endif;
         }
       }
-      $content .= ' <a class="credits" target="_blank" href="https://twitter.com/wearezaion">@wearezaion</a></div>';
+      $content .= ' <a class="credits" target="_blank" href="https://wearezaion.com">@wearezaion</a></div>';
       echo $content;
      ?>
 
