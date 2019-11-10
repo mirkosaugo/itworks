@@ -1,11 +1,9 @@
 itworks
 =======
-an easy localhost launcher :)
+UI localhost launcher :)
 
-![](http://wearezaion.com/img/screen3.png)
 
 It works! is a simple php file (with his small folder dependency) for a cool Directory Listings in your localhost url.
-
 
 
 ### Installation:
@@ -16,7 +14,6 @@ Copy the source ('index.php' and the folder '__sources') in your localhost root 
 
 ### How it works:
 
-![](http://wearezaion.com/img/screen4.png)
 
 Inside your project folder create a .json file called 'itworks.json' (view the default file in repo):
 
